@@ -9,11 +9,16 @@ body {
 }
 
 header {
-    max-height: 140px;
+    min-height: 140px;
     background-color: #503040;
-    font-size: 62px;
+    font-size: 60px;
     border-bottom: 1px solid #fff;
     padding: 10px 0 8px 20px;
+}
+
+.header-text {
+    position: relative;
+    float: top;
 }
 
 footer {
@@ -27,9 +32,10 @@ footer {
     float: right;
 }
 
-.profiilikuva {
+.profile-pic {
     width: 200px;
     height: auto;
+    background-color: #404040;
     position: relative;
     float: right;
     margin: 0 0 10px 20px;
@@ -38,7 +44,8 @@ footer {
 }
 
 .main-text {
-    background-color: #404040;
+    background-color: #aaa;
+    color: #404040;
     font-family: Helvetica, Arial, sans-serif;
     padding: 20px;
     min-height: 100vh;
