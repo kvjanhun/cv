@@ -9,6 +9,14 @@ body {
     border-right: 1px solid #000;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline dotted;
+}
+
 header {
     min-height: 140px;
     background-color: #006d77;
@@ -59,6 +67,14 @@ footer {
     margin: 0;
 }
 
+.info-text a {
+    color: #dff;
+}
+
+.info-text a:hover {
+    color: #fff;
+}
+
 .main-text {
     background-color: #edf6f9;
     color: #405060;
@@ -71,6 +87,7 @@ footer {
 
 .bio {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
     margin: 0 0 35px 45px;
 }
 
@@ -84,6 +101,7 @@ footer {
     position: relative;
     margin: 0 0 0 45px;
     font-size: 36px;
+    font-weight: normal;
 }
 
 .edu-content, .work-content, .other-content {
@@ -94,8 +112,52 @@ footer {
     float: left;
     border-top: 1px solid #000;
     border-left: 1px solid #000;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, #fff, #edf6f9);
     max-width: 700px;
     padding: 12px;
     margin: 0 0 30px 38px;
 }
 
+.edu-content div, .work-content div {
+    margin: 10px 0 10px 10px;
+}
+
+.time {
+    font-size: 24px;
+}
+
+.place {
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 0 6px 0 0;
+}
+
+.subject {
+    color: #708090;
+    font-size: 20px;
+    padding-left: 10px;
+    border-left: 1px dotted #708090;
+}
+
+.lukio .subject {
+    border: none;
+}
+
+.hu-che .description, .perho .description {
+    color: lightgray;
+}
+
+.hu-cs .description {
+    color: green;
+}
+
+.hu-cs .place {
+    margin-left: 78px;
+}
+
+.other {
+    visibility: hidden;
+}
