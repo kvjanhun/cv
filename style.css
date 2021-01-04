@@ -91,20 +91,20 @@ footer {
     font-size: 18px;
 }
 
-.edu, .work, .other {
+.edu, .work, .studies {
     position: relative;
     float: left;
     width: 100%;
 }
 
-.edu-header, .work-header, .other-header {
+.edu-header, .work-header, .studies-header {
     position: relative;
     margin: 0 0 0 45px;
     font-size: 32px;
     font-weight: normal;
 }
 
-.edu-content, .work-content, .other-content {
+.edu-content, .work-content, .studies-content {
     display: block;
     position: relative;
     float: left;
@@ -119,6 +119,15 @@ footer {
     border-bottom: 1px solid #fff;
     border-left: 1px solid #405060;
     border-radius: 10px;
+}
+
+.studies-content div {
+	margin: 10px 0 10px 10px;
+    font-size: 22px;
+}
+
+.studies-content .courses {
+	list-style-type: none;
 }
 
 .edu-content div, .work-content div {
@@ -156,8 +165,4 @@ footer {
 
 .hu-cs .place {
     margin-left: 78px;
-}
-
-.other {
-    visibility: hidden;
 }
