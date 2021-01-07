@@ -27,6 +27,17 @@ header {
     border-bottom: 1px solid #fff;
 }
 
+#linktoself {
+    z-index: 4;
+    display: block;
+    position: absolute;
+    top: 26px;
+    left: auto;
+    right: auto;
+    width: 820px;
+    height: 142px;
+}
+
 .header-text {
     position: relative;
 }
