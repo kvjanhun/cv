@@ -1,9 +1,22 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="eng" class="theme-dark-red">
 <head>
   <meta charset="utf-8">
   <title>CV of Konsta Janhunen</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+        function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-dark-red') {
+                setTheme('theme-light-green');
+            } else {
+                setTheme('theme-dark-red');
+            }
+        }
+  </script>
 </head>
 <body>
   <span><a href="https://kvjanhun.github.io/cv" id="linktoself"></a></span>
@@ -13,11 +26,15 @@
       <span class="header-text"><strong>Konsta Veikko<br>&nbsp;Janhunen</strong></span>
   </header>
   <div class="info-text">
+	  <label id="toggle" class="toggle">
+        <input type="checkbox" id="slider" onChange="toggleTheme()">
+        <span class="slider round"></span>
+      </label>
       <p><strong>30 years (11.12.1990)</strong></p>
       <p><strong>Computer science student at Uni. Helsinki</strong></p>
       <p><span class="git-link"><a href="https://github.com/kvjanhun" 
 								   target="_blank"><strong>GitHub » Python, HTML/CSS, SQL, R, Java</strong></a>
-		  </span></p>
+	    </span></p>
   </div>
   <div class="main-text">
     <p class="bio">"After years of seeking direction I have arrived where it all began. Computers 
