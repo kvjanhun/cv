@@ -1,5 +1,5 @@
 (function () {
-	if (localStorage.getItem('theme') === 'theme-dark-red') {
+	if (sessionStorage.getItem('theme') === 'theme-dark-red') {
 		setTheme('theme-dark-red');
 		document.getElementById('slider').checked = true;
 	} else {
@@ -9,11 +9,11 @@
 })();
 
 function setTheme(themeName) {
-	localStorage.setItem('theme', themeName);
+	sessionStorage.setItem('theme', themeName);
 	document.documentElement.className = themeName;
 }
 function toggleTheme() {
-	if (localStorage.getItem('theme') === 'theme-dark-red') {
+	if (sessionStorage.getItem('theme') === 'theme-dark-red') {
 		setTheme('theme-light-green');
 	} else {
 		setTheme('theme-dark-red');
