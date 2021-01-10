@@ -2,8 +2,8 @@
 
 :root {
 	--color-toggle-dot: #FFF;
-	--color-toggle-active: #2E0E10;
-	--color-toggle-inactive: #75ADA8;
+	--color-toggle-active: #75ADA8;
+	--color-toggle-inactive: #2E0E10;
 }
 
 .theme-light-green {
@@ -69,7 +69,7 @@ header {
     border-bottom: 1px solid var(--color-border);
 }
 
-#linktoself {
+header #linktoself {
     z-index: 4;
     display: block;
     position: absolute;
@@ -162,8 +162,6 @@ footer {
 	transition: 0.4s;
 	box-shadow: 0 0px 15px #2020203d;
 	background: var(--color-toggle-dot);
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
 input:checked + .slider {
