@@ -64,9 +64,9 @@ a:hover {
 header {
     min-height: 140px;
     padding: 10px 0 8px 20px;
-    background-color: var(--color-hf-bg);
     font-size: 60px;
     border-bottom: 1px solid var(--color-border);
+	background: url("assets/header.png") var(--color-hf-bg);
 }
 
 header #linktoself {
@@ -81,6 +81,7 @@ header #linktoself {
 }
 
 .header-text {
+	display: none;
     position: relative;
 }
 
