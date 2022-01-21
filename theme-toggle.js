@@ -3,7 +3,7 @@
 		setTheme('theme-dark-red');
 		document.getElementById('slider').checked = true;
 	} else {
-		setTheme('theme-light-green');
+		setTheme('theme-light');
 		document.getElementById('slider').checked = false;
 	}
 })();
@@ -14,7 +14,7 @@ function setTheme(themeName) {
 }
 function toggleTheme() {
 	if (sessionStorage.getItem('theme') === 'theme-dark-red') {
-		setTheme('theme-light-green');
+		setTheme('theme-light');
 	} else {
 		setTheme('theme-dark-red');
 	}
