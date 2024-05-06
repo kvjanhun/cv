@@ -1,4 +1,4 @@
 # cv
-## Available at: https://kvjanhun.github.io/cv/
+## Available at: http://erez.ac
 
 Curriculum vitae - Ansioluettelo
